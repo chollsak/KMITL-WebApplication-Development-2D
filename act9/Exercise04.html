@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div id="maincontainer"></div>
+
+    <script>
+
+        var div_main = document.createElement("div");
+        var title = document.createElement("h3");
+        title.innerHTML = "Exercise 04: JavaScript&DOM";
+
+        div_main.appendChild(title);
+
+
+        document.body.appendChild(div_main);
+
+        var wk;
+        var button = document.createElement("button");
+        var button_text = document.createTextNode("Click me to display Date and Time");
+        button.appendChild(button_text);
+        button.style.top = 0 + 'px';
+        button.style.right = 0 + 'px';
+        div_main.appendChild(button);
+
+        button.addEventListener("click", function (event) {
+            if (typeof (wk) == "undefined") {
+                wk = new Worker("worker.js");
+                wk.onmessage = function (event) {
+                    button.innerHTML = event.data['time'];
+                    button.style.position = "fixed";
+                    switch (event.data['num'] % 6) {
+                        case 0:
+                            button.style.backgroundColor = "#2F4F4F";
+                            button.style.color = "#8A2BE2";
+                            break;
+                        case 1:
+                            button.style.backgroundColor = "#00FF00";
+                            button.style.color = "#FFD700";
+                            break;
+                        case 2:
+                            button.style.backgroundColor = "#1E90FF";
+                            button.style.color = "#FF4500";
+                            break;
+                        case 3:
+                            button.style.backgroundColor = "#9400D3";
+                            button.style.color = "#FF69B4";
+                            break;
+                        case 4:
+                            button.style.backgroundColor = "#32CD32";
+                            button.style.color = "#FF6347";
+                            break;
+                        case 5:
+                            button.style.backgroundColor = "#00FFFF";
+                            button.style.color = "#FFA07A";
+                            break;
+                    }
+                }
+            }
+            else {
+                wk.terminate();
+                wk = undefined;
+                button.style.position = "static";
+            }
+        });
+
+        var personalInfo = document.createElement("p");
+        var personalInfo_a = document.createElement("a");
+        personalInfo_a.innerHTML = "Personal Info";
+        personalInfo_a.style.color = "#FFCCCC";
+        personalInfo_a.style.backgroundColor = "#FFFFFF";
+        
+        personalInfo_a.onmouseout = function(){
+            personalInfo_a.style.color = "#FFCCCC";
+            personalInfo_a.style.backgroundColor = "#FFFFFF";
+        };
+
+        personalInfo_a.onmouseover = function(){
+            personalInfo_a.style.color = "#0000FF";
+            personalInfo_a.style.backgroundColor = "#FFFF00";
+        };
+
+        var showStatus = false;
+        personalInfo_a.href = "#";
+
+        personalInfo.appendChild(personalInfo_a);
+        div_main.appendChild(personalInfo);
+
+        var personalInfo_div; 
+        personalInfo_a.addEventListener("click", function (event) {
+            if (showStatus == false) {
+                personalInfo_div = document.createElement("div");
+                var personalInfo_ul = document.createElement("ul");
+                var personalInfo_li_Name = document.createElement("li");
+                var personalInfo_li_Subject = document.createElement("li");
+                var personalInfo_li_Semester = document.createElement("li");
+
+                personalInfo_li_Name.innerHTML = "Chollasak Anuwareepong of student, ID: 65010195";
+                personalInfo_li_Subject.innerHTML = "Subject: Web Application Development";
+                personalInfo_li_Semester.innerHTML = "Semester: 2";
+
+                personalInfo_ul.appendChild(personalInfo_li_Name);
+                personalInfo_ul.appendChild(personalInfo_li_Subject);
+                personalInfo_ul.appendChild(personalInfo_li_Semester);
+                personalInfo_div.appendChild(personalInfo_ul);
+                div_main.appendChild(personalInfo_div);
+                showStatus = true;
+                console.log(showStatus);
+                
+                div_main.appendChild(snapShots);
+                div_main.appendChild(snapShots_ul);
+                div_main.appendChild(img);
+            }
+            else {
+                personalInfo_div.querySelector("ul").remove();
+                showStatus = false;
+                console.log(showStatus);
+            }
+        });
+
+        var snapShots = document.createElement("h2");
+        snapShots.innerHTML = "Snapshots";
+        div_main.appendChild(snapShots);
+
+        var snapShots_ul = document.createElement("ul");
+        var snapShots_li_Fireworks = document.createElement("li");
+        var snapShots_li_Crest = document.createElement("li");
+        var snapShots_li_Action = document.createElement("li");
+        var snapShots_li_Buffalo = document.createElement("li");
+
+        var snapShots_a_Fireworks = document.createElement("a");
+        snapShots_a_Fireworks.innerHTML = "Fireworks";
+        snapShots_a_Fireworks.href = "#";
+        snapShots_a_Fireworks.onclick = function(){
+            img.setAttribute("src", "https://cityoflakewood.us/wp-content/uploads/2019/06/Fireworks.jpg");
+        };
+
+        var snapShots_a_Crest = document.createElement("a");
+        snapShots_a_Crest.innerHTML = "Crest";
+        snapShots_a_Crest.href = "#";
+        snapShots_a_Crest.onclick = function(){
+            img.setAttribute("src", "https://m.media-amazon.com/images/I/81Z7E3mB4AL._AC_UF1000,1000_QL80_.jpg");
+        };
+
+        var snapShots_a_Action = document.createElement("a");
+        snapShots_a_Action.innerHTML = "Action";
+        snapShots_a_Action.href = "#";
+        snapShots_a_Action.onclick = function(){
+            img.setAttribute("src", "https://blogs.tuni.fi/uploads/2020/11/70ab5b23-action-blog-kuva.jpg");
+        };
+
+        var snapShots_a_Buffalo = document.createElement("a");
+        snapShots_a_Buffalo.innerHTML = "Buffalo";
+        snapShots_a_Buffalo.href = "#"; 
+        snapShots_a_Buffalo.onclick = function(){
+            img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpKkfpdSGwaliwFoiJydRv9LazRGYNo92YRhh3pHbRux2xSbj1vjJGwsSKAOm6ufXuVJ8&usqp=CAU");
+        };
+
+        snapShots_li_Fireworks.appendChild(snapShots_a_Fireworks);
+        snapShots_li_Crest.appendChild(snapShots_a_Crest);
+        snapShots_li_Action.appendChild(snapShots_a_Action);
+        snapShots_li_Buffalo.appendChild(snapShots_a_Buffalo);
+
+        snapShots_ul.appendChild(snapShots_li_Fireworks);
+        snapShots_ul.appendChild(snapShots_li_Crest);
+        snapShots_ul.appendChild(snapShots_li_Action);
+        snapShots_ul.appendChild(snapShots_li_Buffalo);
+
+        div_main.appendChild(snapShots_ul);
+
+        var img = document.createElement("img");
+        img.setAttribute("src", "https://img5.pic.in.th/file/secure-sv1/image37b1fba4aab25aa6.png");
+        img.setAttribute("width", "500");
+        div_main.appendChild(img);
+        
+        document.getElementById("maincontainer").appendChild(div_main);
+
+
+
+    </script>
+</body>
+
+</html>
