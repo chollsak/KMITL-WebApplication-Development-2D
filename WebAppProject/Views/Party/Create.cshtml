@@ -1,0 +1,80 @@
+﻿@model Party;
+@{
+    ViewData["Title"] = "Create";
+}
+<ul class="nav-links">
+    <li><a href="#"><img class="logo filter" src="../img/logo1.png" alt="logo"></a></li>
+    <li><a href="#" class="filter" style="color: #f88484;">เกี่ยวกับ</a></li>
+    <li class="filter"><a href="#" style="color: #9CDBC8;">จัดอันดับ</a></li>
+    <li class="filter"><a href="#" style="color: #84A7F6;">บริการ</a></li>
+    <li class="filter"><a href="#" style="color: #F6CC84;">รายงาน</a></li>
+    <div class="profile-container">
+        <a class="simongame profilenav" href="../Simon Game Challenge Starting Files/index.html">
+            <img src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t1.15752-9/423472096_434126202389732_4262227168538792874_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeH2bdBhIq2bEJwls_hLShndg9-dAzVfcKKD350DNV9wohCdaBW4WFNopo_uyjIp90oW0QVAYU3w5k8-_R1FqdKl&_nc_ohc=SX_zMTqfrYYAX_-Nv9x&_nc_ht=scontent.fbkk22-3.fna&oh=03_AdROFoeuT_8dwahcBc9AfEuEXPxEU5oFi7wcoFttqjR7kA&oe=660B3F9F">
+        </a>
+        <a class="drumgame profilenav" href="../Drum Kit Starting Files/drumgame.html">
+            <img src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.15752-9/430218074_379299401706603_2983486655377299484_n.png?_nc_cat=105&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHhbavSBYaTd6IYGiE_HDwSbI-pOnraBaFsj6k6etoFob8ePAMSvNG-pvxmzRra3ht_rDj2mBEUQus-MQTkhKAb&_nc_ohc=itOYODk-cLMAX_z_xs7&_nc_ht=scontent.fbkk22-2.fna&oh=03_AdR_WKQ-gui2pC0EyPK5ZzJzFzxpmxflMwDG7Nzg1fTJDw&oe=660B4951">
+        </a>
+        <a class="noti profilenav" href="#"><img src="../img/noti.png"></a>
+        <a class="inbox profilenav" href="#"><img src="../img/inbox.png"></a>
+        <a class="profilepic profilenav" href="#">
+            <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin"
+                 alt="profile">
+        </a>
+</ul>
+<div class="title">สร้างปาร์ตี้</div>
+
+<form method="post" asp-controller="Party" asp-action="Create">
+    <div class="container">
+        <div class="card">
+            <div class="explorer">👀 กำลังค้นหาผู้คน</div>
+            <div class="time"><input name="Time" asp-for="Time"></div>
+            <div class="time" style="color:#84A7F6 ;">เวลาคงเหลือ: x วัน</div>
+            <div class="name"><input type="text" name="Name" asp-for="Name" placeholder="ชื่อปาร์ตี้"></div>
+            <span asp-validation-for="Name" style="font-size: 16px; color: red"></span>
+            <div class="location"><input type="text" name="location" asp-for="location" placeholder="สถานที่"></div>
+            <span asp-validation-for="location" style="font-size: 16px; color: red"></span>
+            <div class="description-container">
+                <div class="description">
+                    <input type="text" name="description" asp-for="Description"
+                           placeholder="รายละเอียด">
+                </div>
+                <input type="text" asp-for="img" id="img" placeholder="Link รูปภาพ">
+            </div>
+            <div class="additional-info">
+                <a class="linker">
+                    <div class="max">
+                        <p>จำนวนผู้เข้าร่วมสูงสุด</p>
+                        <input type="number" name="Max" asp-for="Max" min="1" max="30" placeholder="ระบุ">
+
+                    </div>
+                </a>
+                <a class="linker">
+                    <div class="joined-user">
+                        <p>เจ้าของประกาศ</p>
+                        <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                        <div class="joined-user-name">@Context.Session.GetString("Email")</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="button-container" id="cardbtn">
+        <button type="submit" class="card-button-green" onclick="checkFormEmpty(this)">เปิดปาร์ตี้</button>
+</form>
+        <!-- The Modal -->
+<form method="get" asp-controller="Party" asp-action="Index">
+	<a><button class="card-button-red">ยกเลิก</button></a>
+</form>
+    </div>
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="https://gifdb.com/images/high/let-s-party-michael-scott-the-office-7fy87uizwrrwb5xw.gif"
+             alt="Joined successfully">
+        <p>ยินดีต้อนรับสู่ปาร์ตี้!</p>
+    </div>
+</div>
+<script src="~/js/create.js" asp-append-version="true"></script>
+<link rel="stylesheet" href="~/css/create.css" asp-append-version="true" />

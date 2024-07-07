@@ -1,0 +1,158 @@
+﻿@model IEnumerable<WebAppProject.Models.Party>;
+@{
+    ViewData["Title"] = "Party";
+    
+}
+<header>
+    <ul class="nav-links">
+        <li><a href="#"><img class="logo filter" src="~/img/logo1.png" alt="logo"></a></li>
+        @* <li><a class="filter" style="color: #f88484;" asp-area="" asp-controller="Home" asp-action="Index">About</a></li> *@
+        @* <li class="filter"><a href="#" style="color: #9CDBC8;">Portfolio</a></li>
+        <li class="filter"><a href="#" style="color: #84A7F6;">Services</a></li>
+        <li class="filter"><a href="#" style="color: #F6CC84;">Feedback</a></li> *@
+        <div class="profile-container">
+            <a class="simongame profilenav" href="~/Simon Game Challenge Starting Files/index.html">
+                <img src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t1.15752-9/423472096_434126202389732_4262227168538792874_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeH2bdBhIq2bEJwls_hLShndg9-dAzVfcKKD350DNV9wohCdaBW4WFNopo_uyjIp90oW0QVAYU3w5k8-_R1FqdKl&_nc_ohc=SX_zMTqfrYYAX_-Nv9x&_nc_ht=scontent.fbkk22-3.fna&oh=03_AdROFoeuT_8dwahcBc9AfEuEXPxEU5oFi7wcoFttqjR7kA&oe=660B3F9F">
+            </a>
+            <a class="drumgame profilenav" href="~/Drum Kit Starting Files/drumgame.html">
+                <img src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.15752-9/430218074_379299401706603_2983486655377299484_n.png?_nc_cat=105&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHhbavSBYaTd6IYGiE_HDwSbI-pOnraBaFsj6k6etoFob8ePAMSvNG-pvxmzRra3ht_rDj2mBEUQus-MQTkhKAb&_nc_ohc=itOYODk-cLMAX_z_xs7&_nc_ht=scontent.fbkk22-2.fna&oh=03_AdR_WKQ-gui2pC0EyPK5ZzJzFzxpmxflMwDG7Nzg1fTJDw&oe=660B4951">
+            </a>
+            <a class="noti profilenav" href="#"><img src="~/img/noti.png"></a>
+            <a class="inbox profilenav" href="#"><img src="~/img/inbox.png"></a>
+            <a asp-area="" asp-controller="Profile" asp-action="Index" class="profilepic profilenav">
+                <img src="https://picsum.photos/200/300"
+                     alt="profile">
+            </a>
+        </div>
+    </ul>
+</header>
+
+<div class="card-container">
+    <!--make a card -->
+    @* @ViewBag.A *@
+    @foreach (var party in Model)
+    {
+        
+        <div class="card">
+            <div class="explorer">👀 Explorer</div>
+            <div class="time">@party.Time</div>
+            <input class="time" id="timeLeft" value="คลุมเพื่อดูวันที่เหลือ" style="color:#84A7F6;" onselect="getDayLeft('@party.Time.ToString("yyyy-MM-ddTHH:mm:ss")')" type="text">
+            <p id="demo" class="demo"></p>
+            <div class="name">@party.Name</div>
+            <div class="location">@party.location</div>
+            <div class="description-container">
+                <div class="description">@party.Description</div>
+                <img class="description-img" src=@party.img>
+            </div>
+            <div class="additional-info">
+                <a class="linker" href="#">
+                    <div class="joined-user">
+                        <p>เจ้าของประกาศ</p>
+                        <img src="https://picsum.photos/200/300" alt="profile">
+                        <div class="joined-user-name">@party.Host</div>
+                    </div>
+                </a>
+               
+                <div class="details">
+
+                    <p class="users">
+                        มีคนเข้าร่วม @party.member.Split(',').Length/@party.Max คน
+                        </p>
+                    <div class="joined-user-container">
+
+                        @foreach (string member in party.member.Split(','))
+                        {
+
+                            <a href="#">
+                                <div class="joined-user">
+                                    <img src="https://picsum.photos/200/300" alt="profile">
+                                    <div class="joined-user-name">@member</div>
+                                </div>
+                            </a>
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container" id="cardbtn">
+                <a asp-controller="Party" asp-action="Join" asp-route-Id="@party.Id">
+                    <button type="submit" class="card-button-green" onclick="showModal()">เข้าร่วม</button></a>
+                
+                <!-- The Modal -->
+                    <button class="card-button-yellow" onclick="expandCard(this)">ข้อมูลเพิ่มเติม</button>
+				
+                @if (@Context.Session.GetString("Email") == party.Host)
+                {
+                    <button class="card-button-red" onclick="editModal(this)">เเก้ไข</button>    
+                }
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="https://i.gifer.com/7efs.gif" alt="Joined successfully">
+                <p>เข้าร่วมสำเร็จ!</p>
+            </div>
+        </div>
+        
+        <div id="editModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <form method="post" asp-controller="Party" asp-action="Edit">
+                    <span class="close">&times;</span>
+                    <p>เเก้ไขโพส</p>
+                    <input type="text" name="id" id="id" style="display:none" asp-for="@party.Id" value="@party.Id">
+                    <input type="text" name="name" id="name" class="input" placeholder="ชื่อปาร์ตี้" asp-for="@party.Name" value="@party.Name">
+                    <input type="text" name="location" id="location" class="input" placeholder="สถานที่"  asp-for="@party.location" value="@party.location">
+                    <input type="text" name="description" id="description" class="input" placeholder="รายละเอียด" asp-for="@party.Description" value="@party.Description">
+                    <input type="text" name="img" id="img" class="input" placeholder="Link รูปภาพ" asp-for="@party.img" value="@party.img">
+                    <input type="number" name="max" class="input" id="max" min="1" max="30" placeholder="จำกัดผู้เข้าร่วมที่" asp-for="@party.Max" value="@party.Max">
+                    <p class="enddate">วันสิ้นสุดประกาศ</p>
+                    <input type="datetime-local" name="Time" asp-for="@party.Time" value="@party.Time">
+
+                    <button type="submit" class="except input" onclick="checkFormEmpty()">ยืนยัน</button>
+                </form>
+                <button class="delete input" onclick="deleteModal(this)">ลบประกาศ</button>
+            </div>
+        </div>
+        
+
+        <div id="editCompleteModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="https://i.gifer.com/7efs.gif" alt="Joined successfully">
+                <p>เเก้ไขสำเร็จ!</p>
+            </div>
+        </div>
+
+        <div id="deleteCompleteModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="https://i.gifer.com/7efs.gif" alt="Joined successfully">
+                <p>ลบสำเร็จ!</p>
+            </div>
+        </div>
+
+        <div id="deleteModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                ยืนยันการลบปาร์ตี้?
+                <a asp-controller="Party" asp-action="Delete" asp-route-Id="@party.Id"><button class="except" onclick="deleteCompleteModal(this)">ยืนยัน</button></a>
+                <button class="cancle" onclick="cancle(this)">ยกเลิก</button>
+            </div>
+        </div>
+    }
+
+</div>
+
+<form asp-area="YourArea" asp-controller="Party" asp-action="Create" method="get">
+    <button type="submit" class="button">
+        󠀫󠀫<span class="buttontext plus">+</span><span class="buttontext">New</span><span class="buttontext">Event</span>
+    </button>
+</form>
+

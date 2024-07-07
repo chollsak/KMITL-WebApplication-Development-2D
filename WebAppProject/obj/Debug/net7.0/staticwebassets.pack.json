@@ -1,0 +1,417 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\drumgame.html",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\drumgame.html"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\crash.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\crash.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\kick.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\kick.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\snare.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\snare.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\tom1.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\tom1.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\tom2.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\tom2.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\tom3.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\tom3.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\images\\tom4.png",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\images\\tom4.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\index.js",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\index.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\crash.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\crash.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\kick-bass.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\kick-bass.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\snare.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\snare.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\tom-1.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\tom-1.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\tom-2.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\tom-2.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\tom-3.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\tom-3.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\sounds\\tom-4.mp3",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\sounds\\tom-4.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Drum Kit Starting Files\\styles.css",
+      "PackagePath": "staticwebassets\\Drum Kit Starting Files\\styles.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\game.js",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\game.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\index.html",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\index.html"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\sounds\\blue.mp3",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\sounds\\blue.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\sounds\\green.mp3",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\sounds\\green.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\sounds\\red.mp3",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\sounds\\red.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\sounds\\wrong.mp3",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\sounds\\wrong.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\sounds\\yellow.mp3",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\sounds\\yellow.mp3"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\Simon Game Challenge Starting Files\\styles.css",
+      "PackagePath": "staticwebassets\\Simon Game Challenge Starting Files\\styles.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\css\\create.css",
+      "PackagePath": "staticwebassets\\css\\create.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\css\\editprofile.css",
+      "PackagePath": "staticwebassets\\css\\editprofile.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\camera.png",
+      "PackagePath": "staticwebassets\\img\\camera.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\inbox.png",
+      "PackagePath": "staticwebassets\\img\\inbox.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\inbox2.png",
+      "PackagePath": "staticwebassets\\img\\inbox2.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\logo1.png",
+      "PackagePath": "staticwebassets\\img\\logo1.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\noti.png",
+      "PackagePath": "staticwebassets\\img\\noti.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\noti2.png",
+      "PackagePath": "staticwebassets\\img\\noti2.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\js\\create.js",
+      "PackagePath": "staticwebassets\\js\\create.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\js\\editprofile.js",
+      "PackagePath": "staticwebassets\\js\\editprofile.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Homework\\WebApp\\WebAppProject\\WebAppProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebAppProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebAppProject.props",
+      "PackagePath": "build\\WebAppProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAppProject.props",
+      "PackagePath": "buildMultiTargeting\\WebAppProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebAppProject.props",
+      "PackagePath": "buildTransitive\\WebAppProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,146 @@
+﻿@model UserData
+@{
+    ViewData["Title"] = "Edit Profile Page";
+}
+@* 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+
+<body>
+
+    <p>@Model.Email</p>
+
+    <form class="account" method="POST" asp-controller="Profile" asp-action="Edit">
+        <div class="account-header">
+            <h1 class="account-title">Profile</h1>
+            <div class="btn-container">
+                <button class="button-cancel">Cancel</button>
+                <button type="submit" class="button-save">Save</button>
+            </div>
+        </div>
+
+        <div class="account-edit">
+            <div class="input-container">
+                <label>First Name</label>
+                <input type="text" asp-for="FirstName">
+            </div>
+        </div>
+
+        <div class="account-edit">
+            <div class="input-container">
+                <label>Last Name</label>
+                <input type="text" asp-for="LastName">
+            </div>
+        </div>
+
+        <div class="account-edit">
+            <div class="input-container">
+                <label>Email</label>
+                <input type="email" asp-for="Email">
+            </div>
+        </div>
+
+        <div class="account-edit">
+            <div class="input-container">
+                <label>Password</label>
+                <input type="password" asp-for="Password">
+            </div>
+        </div>
+
+        <div class="account-edit">
+            <div class="input-container">
+                <label>Birthday</label>
+                <input type="date" asp-for="Birthday">
+            </div>
+        </div>
+        
+    </form>
+
+</body>
+
+</html> *@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Input Image With Preview Image</title>
+    <link rel="stylesheet" href="~/css/editprofile.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="edit-container">
+        <div class="profile">
+            <input type="file" id="file" accept="image/*" hidden>
+            <div class="img-area" data-img="">
+                <img src="/img/user.png">
+            </div>
+            <button class="select-image">
+                <img src="/img/camera.png" width="75" height="75">
+            </button>
+        </div>
+
+        <form class="account">
+            <div class="account-header">
+                <h1 class="account-title">Edit Profile</h1>
+                <div class="btn-container">
+                    <button class="button-cancel">Cancel</button>
+                    <button class="button-save">Save</button>
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+
+                <div class="input-container">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-container">
+                    <label>Birthday</label>
+                    <input type="date" placeholder="Birthday" asp-for="Birthday">
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="account-edit">
+                <div class="input-container">
+                    <label>About Me</label>
+                    <input type="text" placeholder="About Me">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    @* <script src="js/editPhofile.js"></script> *@
+</body>
+</html>
+

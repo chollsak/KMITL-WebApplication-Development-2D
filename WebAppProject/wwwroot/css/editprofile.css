@@ -1,0 +1,208 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+body {
+    font-family: "Mitr", sans-serif;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+.edit-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #bde1ed;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.profile {
+    max-width: 300px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.img-area {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .img-area img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        z-index: 100;
+    }
+
+.select-image {
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-left: 75%;
+    margin-top: -40%;
+    z-index: 100;
+}
+
+.account {
+    flex: 2;
+    /* margin-top: 500px; */
+    margin-left: 40px;
+    margin-right: 10px;
+    /* justify-content: center; */
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+    padding-bottom: 1%;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #768499;
+}
+
+.account-title {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.btn-container {
+    margin-right: 5px;
+}
+
+.button-cancel {
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #768499;
+    border-radius: 2em;
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #ffffff;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+    .button-cancel:hover {
+        background-color: #f1f5f9;
+    }
+
+.button-save {
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #458ff6;
+    border-radius: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #536dfe;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+    .button-save:hover {
+        background-color: #4053c9;
+    }
+
+.account-edit {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+    .input-container label {
+        color: #768499;
+        font-size: 18px;
+    }
+
+    .input-container input {
+        height: 50px;
+        border: 1.5px solid #768499;
+        border-radius: 5px;
+        padding: 5px;
+        color: #768499;
+    }
+
+        .input-container input:focus {
+            outline: none;
+            border: 1.5px solid #536dfe;
+        }
+
+@media screen and (max-width : 768px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .profile {
+        margin-bottom: 10px;
+        margin-left: 15%;
+    }
+
+    .account {
+        margin: 0;
+    }
+
+    .account-header {
+        flex-direction: column;
+    }
+
+    .account-edit {
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+    .input-container {
+        margin: 10px;
+    }
+
+        .input-container input {
+            margin-right: 10px;
+        }
+}
